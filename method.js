@@ -6,6 +6,7 @@ const phone = {
     memory: "128",
     color: "black",
     power: "true",
+    batteryPower: 100,
     call: function(name){
 return `Я звоню ${name}`
     }
