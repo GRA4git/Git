@@ -35,12 +35,12 @@ return `Я звоню ${name}`
     sentMessage: function(a, b, c){
         this.sent.push({to:"a", time: "b", message: "c"} )
 
-    }
+    },
+    clearInbox: function (){
+        this.inbox.splice(0)
+    },
+    clearSent: function (){
+        this.sent.splice(0)
+},
 }
 
-
-
-
-
-// 9. Создать метод `sentMessage()`, который будет добавлять новый объект в массив с отправленными сообщениями. Подумайте сколько параметров должен будет принимать этот метод.
-// 10. Создать два метода `clearInbox()` и `clearSent()` которые будут удалять все входящие и все исходящие сообщения соответственно. 
