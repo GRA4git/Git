@@ -7,7 +7,7 @@ const phone = {
     color: "black",
     power: "true",
     call: function(name){
-return "Я звоню"
+return `Я звоню ${name}`
     }
 }
 console.log(phone.call())
