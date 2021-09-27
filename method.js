@@ -9,9 +9,12 @@ const phone = {
     batteryPower: 100,
     call: function(name){
 return `Я звоню ${name}`
+    },
+    getBatteryPower: function(){
+    return `Ваша зарядка ${this.batteryPower} %`
     }
 }
-console.log(phone.call())
+
 // 2. Добавить в объект метод `call()` который будет возвращать одну строку “Я звоню…”
 // 3. Изменить метод `call()` таки образом, чтобы он принимал один параметр - имя того, кому звоним и возвращал строку: “Я звоню `[name]`".
 // 4. Добавить в объект свойство `batteryPower` которое хранит значение кол-во зараяда.
